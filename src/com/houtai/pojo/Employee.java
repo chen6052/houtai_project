@@ -5,7 +5,7 @@ import java.sql.Date;
 
 public class Employee implements Serializable {
     /*
-    empid     NUMBER(2) not null,
+    empid     varchar2(20) not null,
     pid       NUMBER(2),
     mgrid     NUMBER(2),
     ename     VARCHAR2(50),
@@ -15,23 +15,23 @@ public class Employee implements Serializable {
     sex       CHAR(3),
     age       NUMBER(2),
     birthday  DATE,
-    phone     NUMBER(11),
+    phone     CHAR(11),
     address   VARCHAR2(50),
     bonus     NUMBER(5),
     hiredate  DATE,
     elsemoney NUMBER(5)
     */
-    private int empid;
+    private String empid;
     private int pid;
-    private int mgrid;
+    private String mgrid;
     private String ename;
     private String password;
     private String emptype;
-    private int idcard;
+    private String idcard;
     private char sex;
     private int age;
     private Date birthday;
-    private int phone;
+    private String phone;
     private String address;
     private double bonus; //½±½ð
     private Date hiredate;
@@ -40,11 +40,11 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public int getEmpid() {
+    public String getEmpid() {
         return empid;
     }
 
-    public void setEmpid(int empid) {
+    public void setEmpid(String empid) {
         this.empid = empid;
     }
 
@@ -56,11 +56,11 @@ public class Employee implements Serializable {
         this.pid = pid;
     }
 
-    public int getMgrid() {
+    public String getMgrid() {
         return mgrid;
     }
 
-    public void setMgrid(int mgrid) {
+    public void setMgrid(String mgrid) {
         this.mgrid = mgrid;
     }
 
@@ -88,11 +88,11 @@ public class Employee implements Serializable {
         this.emptype = emptype;
     }
 
-    public int getIdcard() {
+    public String getIdcard() {
         return idcard;
     }
 
-    public void setIdcard(int idcard) {
+    public void setIdcard(String idcard) {
         this.idcard = idcard;
     }
 
@@ -120,11 +120,11 @@ public class Employee implements Serializable {
         this.birthday = birthday;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -163,9 +163,9 @@ public class Employee implements Serializable {
     @Override
     public String toString() {
         return "Employee{" +
-                "empid=" + empid +
+                "empid='" + empid + '\'' +
                 ", pid=" + pid +
-                ", mgrid=" + mgrid +
+                ", mgrid='" + mgrid + '\'' +
                 ", ename='" + ename + '\'' +
                 ", password='" + password + '\'' +
                 ", emptype='" + emptype + '\'' +
@@ -173,7 +173,7 @@ public class Employee implements Serializable {
                 ", sex=" + sex +
                 ", age=" + age +
                 ", birthday=" + birthday +
-                ", phone=" + phone +
+                ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", bonus=" + bonus +
                 ", hiredate=" + hiredate +
