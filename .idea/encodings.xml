@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/applicationContext-dao.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/applicationContext-service.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/applicationContext-trasc.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/houtai/controller/EmployeeController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/houtai/controller/PageController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/houtai/util/Page.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/db.properties" charset="UTF-8" />
@@ -12,7 +13,7 @@
     <file url="file://$PROJECT_DIR$/web/WEB-INF/My97DatePicker" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/WEB-INF/editor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/WEB-INF/web.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/js/typem.js" charset="GBK" />
-    <file url="PROJECT" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/js/typem.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
